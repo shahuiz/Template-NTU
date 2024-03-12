@@ -1,0 +1,48 @@
+\documentclass[usenames,dvipsnames]{beamer}
+
+\usepackage{amsfonts,amsthm,amsmath}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}  
+\usepackage[backend=biber, maxbibnames=99, style=alphabetic, sorting=nyt]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor, tikz, braket, booktabs, array, multirow, rotating, multirow, marvosym}
+
+\usetheme{Singapore}
+\useoutertheme{infolines}
+\useinnertheme{circles}
+\setbeamercolor{structure}{fg = MidnightBlue}
+
+\input{notations}
+
+\addbibresource{}
+
+\title[test]{Test Slides}
+
+\author[xxx \etal]{Authors \inst{1}}
+
+
+\institute[]{
+  	\inst{1} Nanyang Technological University, Singapore \\
+}
+
+
+\date[conf.]{Conference \\ City, Country}
+
+\pgfdeclareimage[height=1cm]{university-logo}{NTU-logo.png}
+\logo{\pgfuseimage{university-logo}}
+
+
+\AtBeginSection[]{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\end{document}
